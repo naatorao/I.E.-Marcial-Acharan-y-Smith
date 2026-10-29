@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#400409">
+    <meta name="description"
+        content="I.E. Centenaria Marcial Acharán y Smith: formamos hoy a los grandes líderes del mañana en Trujillo.">
+    <title>Inicio | I.E. Marcial Acharán y Smith</title>
+    <link rel="stylesheet" href="../css/inicio.css">
+    <link rel="stylesheet" href="../css/accesibilidad.css">
+    <script src="../js/inicio.js" defer></script>
+    <script src="../js/accesibilidad.js" defer></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main-content">Saltar al contenido principal</a>
+
+    <header class="site-header">
+        <a class="brand" href="./inicio.html" aria-label="I.E. Marcial Acharán y Smith, inicio">
+            <img src="../media/images/insignea.png" alt="insignea">
+            <span class="brand-copy">
+                <strong>I.E. Marcial Acharán y Smith</strong>
+                <small>Disciplina <i>·</i> Conocimiento <i>·</i> Futuro</small>
+            </span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation">
+            <span class="menu-toggle-lines" aria-hidden="true"></span>
+            <span class="sr-only">Abrir menú</span>
+        </button>
+
+        <nav class="navbar" id="site-navigation" aria-label="Navegación principal">
+            <ul class="nav-links">
+                <li><a href="./inicio.html" aria-current="page">Inicio</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./blog.html">Noticias</a></li>
+                <li><a href="./galeria.html">Galería</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content" tabindex="-1">
+        <section class="hero" aria-labelledby="hero-title">
+            <img class="campus-scene" src="/media/images/DICTTIVA.jpg"
+                alt="Fotografía ilustrativa de un edificio escolar" fetchpriority="high" decoding="async">
+            <div class="hero-shade" aria-hidden="true"></div>
+            <div class="hero-copy" data-reveal>
+                <p class="handwritten welcome">Bienvenidos a la
+                    <span class="welcome-rays" aria-hidden="true"><i></i><i></i><i></i></span>
+                </p>
+                <h1 id="hero-title">I.E. Marcial<br>Acharán y Smith</h1>
+                <span class="title-underline" aria-hidden="true"></span>
+                <h2>Formamos hoy, grandes líderes mañana.</h2>
+                <p class="hero-description">
+                    Somos una institución educativa comprometida con la formación integral
+                    de nuestros estudiantes, brindando una educación de calidad, con valores
+                    y una visión de futuro.
+                </p>
+                <div class="hero-actions">
+                    <a class="button button-primary" href="./nosotros.html">Conoce más <span aria-hidden="true">→</span></a>
+                </div>
+            </div>
+            <p class="handwritten side-note">Aquí comienza<br>tu gran historia</p>
+            <div class="paper-plane" aria-hidden="true">
+                <svg viewBox="0 0 54 48" fill="none">
+                    <path d="m4 23 44-18-17 40-8-17L4 23Z" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+                    <path d="m23 28 25-23" stroke="currentColor" stroke-width="2.5"/>
+                </svg>
+            </div>
+        </section>
+
+        <section class="family-section" aria-labelledby="family-title">
+            <div class="family-copy" data-reveal>
+                <p class="handwritten">Más que una escuela</p>
+                <h2 id="family-title">Una gran familia</h2>
+                <p>Crecemos, aprendemos y avanzamos juntos. En nuestra comunidad, cada estudiante encuentra un lugar para descubrir su talento y construir su futuro.</p>
+                <a href="./nosotros.html">Conoce nuestra comunidad <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="family-image" data-reveal>
+                <img src="../media/images/estudiantes-aula.jpg" alt="Estudiantes participando en una clase, fotografía ilustrativa"
+                    loading="lazy" decoding="async">
+                <span>Disciplina · Conocimiento · Futuro</span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="footer-brand" href="./inicio.html">
+            <img src="../media/images/insignea.png" alt="">
+            <span><strong>I.E. Marcial Acharán y Smith</strong><small>Trujillo, Perú</small></span>
+        </a>
+        <p>Formamos hoy, grandes líderes mañana.</p>
+        <div class="footer-contact">
+            <a href="./contacto.html">Contacto</a>
+            <a href="mailto:acharanysmith@gmail.com">acharanysmith@gmail.com</a>
+            <a href="https://unsplash.com/license" target="_blank" rel="noreferrer">Fotografías ilustrativas: Unsplash</a>
+            <span>&copy; 2026 I.E. Marcial Acharán y Smith</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>

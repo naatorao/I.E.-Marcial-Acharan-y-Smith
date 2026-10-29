@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#580816">
+    <meta name="description" content="Conoce los servicios académicos, trámites y espacios de bienestar de la I.E. Marcial Acharán y Smith de Trujillo.">
+    <title>Servicios | I.E. Marcial Acharán y Smith</title>
+    <link rel="stylesheet" href="../css/servicios.css">
+    <script src="../js/servicios.js" defer></script>
+    <link rel="stylesheet" href="../css/accesibilidad.css">
+    <script src="../js/accesibilidad.js" defer></script>
+</head>
+<body>
+    <section class="hero" aria-labelledby="page-title">
+        <div class="hero-content">
+            <p class="eyebrow">I.E. Marcial Acharán y Smith</p>
+            <h1 id="page-title">Servicios <span></span></h1>
+            <p class="motto">Disciplina <i>·</i> Conocimiento <i>·</i> Futuro</p>
+        </div>
+    </section>
+
+    <header class="site-header">
+        <a class="brand" href="./inicio.html" aria-label="I.E. Marcial Acharán y Smith, inicio">
+            <img src="../media/images/insignea.png" alt="">
+            <span class="brand-copy">
+                <strong>I.E. Marcial Acharán y Smith</strong>
+                <small>Disciplina <i>·</i> Conocimiento <i>·</i> Futuro</small>
+            </span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-navigation" aria-label="Abrir menú">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="navbar" id="site-navigation" aria-label="Navegación principal">
+            <ul class="nav-links">
+                <li><a href="./inicio.html">Inicio</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./servicios.html" aria-current="page">Servicios</a></li>
+                <li><a href="./blog.html">Noticias</a></li>
+                <li><a href="./galeria.html">Galería</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="services-section" id="servicios" aria-labelledby="services-title">
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">A tu servicio</p>
+                    <h2 id="services-title">Encuentra lo que necesitas</h2>
+                    <p class="section-intro">Explora los recursos y la información disponible para estudiantes y familias.</p>
+                </div>
+                <p class="service-count" aria-live="polite"><strong id="result-count">8</strong> servicios</p>
+            </div>
+
+            <div class="service-tools">
+                <label class="search-box">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.5 4.5"></path></svg>
+                    <span class="sr-only">Buscar servicios</span>
+                    <input id="service-search" type="search" placeholder="¿Qué servicio estás buscando?" autocomplete="off">
+                    <kbd>/</kbd>
+                </label>
+                <div class="filter-list" role="group" aria-label="Filtrar por categoría">
+                    <button class="filter-pill is-active" type="button" data-category="Todos" aria-pressed="true">Todos</button>
+                    <button class="filter-pill" type="button" data-category="Trámites" aria-pressed="false">Trámites</button>
+                    <button class="filter-pill" type="button" data-category="Académico" aria-pressed="false">Académico</button>
+                    <button class="filter-pill" type="button" data-category="Bienestar" aria-pressed="false">Bienestar</button>
+                    <button class="filter-pill" type="button" data-category="Institucional" aria-pressed="false">Institucional</button>
+                </div>
+            </div>
+
+            <div class="service-grid" id="service-grid">
+                <article class="service-card" data-category="Trámites" data-search="certificados de estudio constancias notas documentos">
+                    <h3>Certificados de Estudio</h3>
+                    <p>Solicita certificados de estudio y constancias de notas oficiales.</p>
+                    <button class="card-action" type="button" data-service="certificados">Ver información <span aria-hidden="true">→</span></button>
+                </article>
+                <article class="service-card" data-category="Trámites" data-search="proceso matrícula estudiantes nuevos ratificación vacante">
+                    <h3>Proceso de Matrícula</h3>
+                    <p>Fechas clave y requisitos para estudiantes nuevos y ratificación.</p>
+                    <button class="card-action" type="button" data-service="matricula">Ver información <span aria-hidden="true">→</span></button>
+                </article>
+                <article class="service-card" data-category="Académico" data-search="horarios escolares clase turnos sección padres familia atención">
+                    <h3>Horarios Escolares</h3>
+                    <p>Consulta horarios por grado, sección y turnos de atención a familias.</p>
+                    <button class="card-action" type="button" data-service="horarios">Ver información <span aria-hidden="true">→</span></button>
+                </article>
+                <article class="service-card" data-category="Académico" data-search="material educativo textos guías biblioteca virtual recursos">
+                    <h3>Material Educativo</h3>
+                    <p>Accede a textos escolares, guías de trabajo y recursos de aprendizaje.</p>
+                    <button class="card-action" type="button" data-service="materiales">Ver información <span aria-hidden="true">→</span></button>
+                </article>
+                <article class="service-card" data-category="Bienestar" data-search="convivencia escolar orientación psicopedagógica prevención acoso apoyo">
+                    <h3>Convivencia Escolar</h3>
+                    <p>Orientación y apoyo para el bienestar integral de cada estudiante.</p>
+                    <button class="card-action" type="button" data-service="convivencia">Ver información <span aria-hidden="true">→</span></button>
+                </article>
+                <article class="service-card" data-category="Institucional" data-search="comités reglamento normas documentos institución">
+                    <h3>Comités y Reglamento</h3>
+                    <p>Conoce los comités, acuerdos de convivencia y normas del colegio.</p>
+                    <button class="card-action" type="button" data-service="comites">Ver información <span aria-hidden="true">→</span></button>
+                </article>
+                <article class="service-card" data-category="Bienestar" data-search="talleres extracurriculares arte música deporte ciencia">
+                    <h3>Especialidades Técnicas</h3>
+                    <p>Descubre actividades de arte, música, deporte y ciencia.</p>
+                    <button class="card-action" type="button" data-service="talleres">Ver información <span aria-hidden="true">→</span></button>
+                </article>
+                <article class="service-card" data-category="Institucional" data-search="directorio galería contacto comunidad educativa fotografías">
+                    <h3>Directorio y Galería</h3>
+                    <p>Encuentra los canales institucionales y conoce nuestra comunidad.</p>
+                    <button class="card-action" type="button" data-service="directorio">Ver información <span aria-hidden="true">→</span></button>
+                </article>
+            </div>
+            <div class="empty-state" id="empty-state" hidden>
+                <span aria-hidden="true">⌕</span>
+                <h3>No encontramos servicios</h3>
+                <p>Prueba con otro término o selecciona una categoría diferente.</p>
+                <button type="button" id="clear-filters">Limpiar búsqueda y filtros</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-main">
+            <div class="footer-about">
+                <a class="footer-brand" href="./inicio.html">
+                    <img src="../media/images/insignea.png" alt="">
+                    <span><strong>I.E. Marcial Acharán y Smith</strong><small>Disciplina · Conocimiento · Futuro</small></span>
+                </a>
+                <p>Formamos hoy, grandes líderes mañana. Educación y compromiso con los jóvenes de Trujillo.</p>
+            </div>
+            <div class="footer-column">
+                <h2>Visítanos</h2>
+                <address>Jr. Colón 467,<br>Centro Histórico,<br>Trujillo, Perú</address>
+            </div>
+            <div class="footer-column">
+                <h2>Atención</h2>
+                <a href="tel:+51970320793">+51 970 320 793</a>
+                <a href="mailto:acharanysmith@gmail.com">acharanysmith@gmail.com</a>
+            </div>
+            <div class="footer-column">
+                <h2>Enlaces rápidos</h2>
+                <a href="./nosotros.html">Nosotros</a>
+                <a href="./blog.html">Noticias</a>
+                <a href="./contacto.html">Contacto</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 I.E. Marcial Acharán y Smith. Todos los derechos reservados.</span>
+            <div class="social-links" aria-label="Redes sociales">
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">ig</a>
+            </div>
+        </div>
+    </footer>
+
+    <dialog class="service-dialog" id="service-dialog" aria-labelledby="dialog-title">
+        <button class="dialog-close" type="button" aria-label="Cerrar información">×</button>
+        <span class="dialog-category" id="dialog-category"></span>
+        <h2 id="dialog-title"></h2>
+        <p class="dialog-description" id="dialog-description"></p>
+        <h3>Requisitos / información</h3>
+        <ul id="dialog-requirements"></ul>
+        <a class="dialog-action" id="dialog-action" href="#">Continuar <span aria-hidden="true">→</span></a>
+    </dialog>
+</body>
+</html>
